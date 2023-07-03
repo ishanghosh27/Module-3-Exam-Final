@@ -1,0 +1,34 @@
+uuid: f638dc0f-d29e-4bc4-8c16-4ed909490a42
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.available-developers
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_availabledevelopers
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:available-developers'
+settings:
+  id: 'system_menu_block:available-developers'
+  label: 'Available Developers'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      manager: manager

@@ -1,0 +1,30 @@
+uuid: 221d07f5-3639-49d2-8bd7-2b459141fc8f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:43bbf175-92b8-4755-b545-36717e3f8fd6'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_googleloginurl
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:43bbf175-92b8-4755-b545-36717e3f8fd6'
+settings:
+  id: 'block_content:43bbf175-92b8-4755-b545-36717e3f8fd6'
+  label: 'Google Login URL'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/login
