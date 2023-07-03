@@ -1,0 +1,8 @@
+uuid: e4ebc361-dd2b-491b-95c6-be2c21ecf0ca
+langcode: en
+status: true
+dependencies: {  }
+id: available-developers
+label: 'Available Developers'
+description: ''
+locked: false

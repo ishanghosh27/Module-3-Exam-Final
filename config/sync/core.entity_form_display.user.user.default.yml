@@ -1,0 +1,92 @@
+uuid: 31d8fa2c-ddb5-4cff-9375-22a545ed9d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_allocation_status
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_projects_allocated
+    - field.field.user.user.field_skills
+    - field.field.user.user.field_years_of_experience_yoe_
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - path
+    - text
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  field_allocation_status:
+    type: options_select
+    weight: 32
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_full_name:
+    type: text_textfield
+    weight: 36
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_projects_allocated:
+    type: entity_reference_autocomplete
+    weight: 34
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_skills:
+    type: entity_reference_autocomplete
+    weight: 35
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_years_of_experience_yoe_:
+    type: number
+    weight: 33
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    type: image_image
+    weight: -1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden: {  }

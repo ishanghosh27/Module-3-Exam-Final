@@ -1,0 +1,25 @@
+uuid: 36d5974c-a9b0-473b-87b4-488985427205
+langcode: en
+status: true
+dependencies:
+  module:
+    - googlelogin
+    - system
+  theme:
+    - olivero
+id: olivero_googleoauthlogin
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: google_oauth_login_block
+settings:
+  id: google_oauth_login_block
+  label: 'Google OAuth Login'
+  label_display: visible
+  provider: googlelogin
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/login

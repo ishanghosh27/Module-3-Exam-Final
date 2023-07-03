@@ -1,0 +1,10 @@
+uuid: e46b41d7-3254-4f97-97ae-f8eff492dc63
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.project_page_user
+label: 'Project Page User'
+targetEntityType: user
+cache: true

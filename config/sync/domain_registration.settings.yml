@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 0xE4emSSHTVKb88WL3yN2IahuH23p8VNAXMZNux6BKs
+method: 0
+pattern: innoraft.com
+message: 'You Can Only Register Using Innoraft Mail Addresses'
+actions: null
+form_build_id: form-akBQFaVYZpmQMrHS1wNqSI8tJ3Rl64LZo6UeFugWxW8
+form_token: EZgTVBa_W-RdiB85d7OVu5udviDm9lM8WftvaigTDfg
+form_id: domain_registration_admin_form

@@ -1,0 +1,24 @@
+uuid: 876b3a31-db16-49cc-a84b-abba3f05842b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_full_name
+    - filter.format.plain_text
+  module:
+    - text
+    - user
+id: user.user.field_full_name
+field_name: field_full_name
+entity_type: user
+bundle: user
+label: 'Full Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text

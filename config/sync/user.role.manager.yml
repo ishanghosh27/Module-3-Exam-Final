@@ -1,0 +1,27 @@
+uuid: a17f005f-a9bd-42ca-9828-b171e649a1dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+  module:
+    - node
+    - path
+    - toolbar
+id: manager
+label: Manager
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create project content'
+  - 'create url aliases'
+  - 'delete any project content'
+  - 'delete own project content'
+  - 'delete project revisions'
+  - 'edit any project content'
+  - 'edit own project content'
+  - 'revert project revisions'
+  - 'view own unpublished content'
+  - 'view project revisions'

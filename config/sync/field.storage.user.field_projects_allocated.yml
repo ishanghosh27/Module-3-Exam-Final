@@ -1,0 +1,20 @@
+uuid: 42c16a04-c9c6-4157-ac81-298767f08366
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: user.field_projects_allocated
+field_name: field_projects_allocated
+entity_type: user
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
